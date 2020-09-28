@@ -113,6 +113,7 @@ class Capybara::RackTest::Node < Capybara::Driver::Node
   end
 
   def find_xpath(locator, **_hints)
+    STDOUT.puts "> ~/Desktop/mdsol/capybara/lib/capybara/rack_test/node.rb:: #find_xpath: <"
     native.xpath(locator).map { |el| self.class.new(driver, el) }
   end
 

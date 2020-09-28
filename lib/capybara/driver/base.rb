@@ -16,6 +16,7 @@ class Capybara::Driver::Base
   end
 
   def find_xpath(query, **options)
+    STDOUT.puts "> ~/Desktop/mdsol/capybara/lib/capybara/driver/base.rb:: #find_xpath: <"
     raise NotImplementedError
   end
 

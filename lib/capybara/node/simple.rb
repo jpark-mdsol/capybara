@@ -178,6 +178,7 @@ module Capybara
 
       # @api private
       def find_xpath(xpath, **_options)
+        STDOUT.puts "> ~/Desktop/mdsol/capybara/lib/capybara/node/simple.rb:: #find_xpath: <"
         native.xpath(xpath)
       end
 

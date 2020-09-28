@@ -4,6 +4,7 @@ module Capybara
   module Selenium
     module Find
       def find_xpath(selector, uses_visibility: false, styles: nil, position: false, **_options)
+        STDOUT.puts "> ~/Desktop/mdsol/capybara/lib/capybara/selenium/extensions/find.rb:: #find_xpath: <"
         find_by(:xpath, selector, uses_visibility: uses_visibility, texts: [], styles: styles, position: position)
       end
 

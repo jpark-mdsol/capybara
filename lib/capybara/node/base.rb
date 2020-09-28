@@ -112,6 +112,7 @@ module Capybara
 
       # @api private
       def find_xpath(xpath, **options)
+        STDOUT.puts "> ~/Desktop/mdsol/capybara/lib/capybara/node/base.rb:: #find_xpath: <"
         if base.method(:find_xpath).arity != 1
           base.find_xpath(xpath, **options)
         else

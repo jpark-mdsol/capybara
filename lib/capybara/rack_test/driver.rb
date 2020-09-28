@@ -71,6 +71,7 @@ class Capybara::RackTest::Driver < Capybara::Driver::Base
   end
 
   def find_xpath(selector)
+    STDOUT.puts "> ~/Desktop/mdsol/capybara/lib/capybara/rack_test/driver.rb:: #find_xpath: <"
     browser.find(:xpath, selector)
   end
 
